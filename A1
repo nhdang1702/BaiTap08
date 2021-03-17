@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+#include <algorithm>
+using namespace std;
+
+void f(int xval)
+{
+	int x;
+	x = xval;
+	cout << "x address: " << &x << endl;
+	// in địa chỉ của x tại đây
+}
+void g(int yval)
+{
+	int y;
+	cout << "y address: " << &y << endl;
+	// in địa chỉ của y tại đây
+}
+int main()
+{
+	f(7);
+	g(11);
+	return 0;
+}
+// địa chỉ hai biến giống nhau
+// hai hàm đều có số biến giống nhau, sau khi hàm đầu tiên thực thi, dữ liệu hàm đó đc giải phóng rồi đc sử dụng chạy hàm thứ hai
+
