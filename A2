@@ -1,0 +1,37 @@
+2a
+int main()
+{
+	char a[4] = "abc";
+	for (char* cp = a; (*cp) != '\0'; cp++) {
+		cout << (void*)cp << " : " << (*cp) << endl;
+	}
+	return 0;
+}
+ A2b
+int main()
+{
+	int a[4] = { 1,2,3,4 };
+	for (int* cp = a; cp <= &a[3]; cp++) {
+		cout << (void*)cp << " : " << (*cp) << endl;
+	}
+	return 0;
+}
+
+Bai A2c
+int main()
+{
+	double a[4] = { 1,2,3,4 };
+	for (double* cp = a; cp <= &a[3]; cp++) {
+		cout << (void*)cp << " : " << (*cp) << endl;
+	}
+	return 0;
+}
+ A2d
+int main()
+{
+	double a[4] = { 1,2,3,4 };
+	for (double* cp = a; cp <= &a[3]; cp += 2) {
+		cout << (void*)cp << " : " << (*cp) << endl;
+	}
+	return 0;
+}
